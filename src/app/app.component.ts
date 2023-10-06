@@ -9,7 +9,7 @@ import { WishItem } from 'src/shared/models/wishItem';
 export class AppComponent {
   title = 'aseDesign-first-angular-app';
   description = 'Welcome to the aseDesign universe!';
-  items = [
+  items: WishItem[] = [
     new WishItem('To learn Angular'),
     new WishItem('Get some coffee', true),
     new WishItem('Find grass that cuts itself', false),
