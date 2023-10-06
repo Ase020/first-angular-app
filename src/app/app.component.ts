@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WishItem } from 'src/shared/models/wishItem';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aseDesign-first-angular-app';
-  description = 'welcome to the aseDesign universe!';
+  description = 'Welcome to the aseDesign universe!';
+  items = [
+    new WishItem('To learn Angular'),
+    new WishItem('Get some coffee', true),
+    new WishItem('Find grass that cuts itself', false),
+  ];
 }
